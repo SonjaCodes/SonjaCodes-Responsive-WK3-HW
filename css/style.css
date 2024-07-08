@@ -103,3 +103,9 @@ p {
 .rounded {
   border-radius: 0.25rem !important;
 }
+
+@media (max-width: 576px) {
+  .about-me-adjusted-mobile {
+    font-size: 10px !important;
+  }
+}
