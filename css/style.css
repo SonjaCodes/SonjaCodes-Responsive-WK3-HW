@@ -56,6 +56,7 @@ p {
 
 .about-link {
   color: var(--primary-color);
+  box-shadow: var(--box-shadow);
   border: 1px solid var(--primary-color);
 }
 
@@ -77,6 +78,7 @@ p {
 
 .btn-primary {
   background: #6c63ff;
+  border: 1px solid var(--primary-color);
 }
 
 .about-paragraphs {
@@ -97,6 +99,7 @@ p {
 }
 
 .email-link:hover {
+  color: pink;
   text-decoration: underline;
 }
 
@@ -104,8 +107,27 @@ p {
   border-radius: 0.25rem !important;
 }
 
+.contact-link:hover,
+.about-link:hover,
+.btn-primary:hover {
+  background: pink;
+  border: 1px solid pink;
+  color: white;
+}
+
 @media (max-width: 576px) {
-  .about-me-mobile h1 {
-    font-size: 10px !important;
+  .about-me-mobile {
+    font-size: 70px;
+  }
+
+  .card-text,
+  .card-title {
+    text-align: center;
+  }
+
+  .btn-primary {
+    box-shadow: var(--box-shadow);
+    display: block;
+    width: 100%;
   }
 }
