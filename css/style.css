@@ -115,6 +115,10 @@ p {
   color: white;
 }
 
+.container {
+  min-width: 350px;
+}
+
 @media (max-width: 576px) {
   .about-me-mobile {
     font-size: 70px;
