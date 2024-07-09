@@ -79,6 +79,7 @@ p {
 .btn-primary {
   background: #6c63ff;
   border: 1px solid var(--primary-color);
+  transition: 100ms ease-in-out;
 }
 
 .about-paragraphs {
@@ -96,10 +97,11 @@ p {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  transition: 100ms ease-in-out;
 }
 
 .email-link:hover {
-  color: pink;
+  color: #e60a09;
   text-decoration: underline;
 }
 
@@ -110,9 +112,31 @@ p {
 .contact-link:hover,
 .about-link:hover,
 .btn-primary:hover {
-  background: pink;
-  border: 1px solid pink;
+  border: none;
   color: white;
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
 
 .container {
